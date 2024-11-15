@@ -1,0 +1,183 @@
+.task-header,
+.task-list {
+    width: 100%;
+    margin-top: 5px;
+    max-width: 800px; 
+}
+
+/* Styling untuk Task List */
+/* .task-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+} */
+
+/* Fixed header */
+/* .task-header {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 15px;
+    position: fixed; 
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; 
+    background-color: rgba(255, 255, 255, 0); 
+    padding: 15px 0;
+    
+} */
+
+/* Styling for the Task List */
+.task-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.task-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.381);
+}
+
+.task-card {
+    width: 100%;
+    border-radius: 16px !important;
+    border: 1px solid #f3f4f6 !important;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.139) !important;
+    background: rgba(255, 255, 255, 0.85);
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), 
+                box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    backdrop-filter: blur(10px);
+}
+
+.task-card {
+    background: rgba(253, 253, 253, 0.269) !important;
+}
+
+body {
+    background: transparent !important;
+}
+
+
+.task-card .card-body {
+    padding: 20px;
+}
+
+/* Making text bold for task name, priority, and status */
+.task-cell.task-name,
+.task-cell.priority span,
+.task-cell.status span {
+    font-weight: bold; 
+}
+
+
+.task-cell {
+    padding: 0 15px;
+}
+
+.task-name {
+    width: 30%;
+}
+
+.priority {
+    width: 20%;
+}
+
+.status {
+    width: 20%;
+}
+
+.status-icon {
+    width: 10%;
+    text-align: center;
+}
+
+.actions {
+    width: 20%;
+    text-align: right;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+}
+
+.status-badge.to-do {
+    background-color: #f3f4f6;
+    color: #6b7280;
+}
+
+.status-badge.in-progress {
+    background-color: #dbeafe;
+    color: #2563eb;
+}
+
+.status-badge.done {
+    background-color: #f3e8ff;
+    color: #9333ea;
+}
+
+.btn-icon {
+    color: #6b7280;
+    padding: 8px;
+    margin-left: 20px;
+    background: none;
+    border: none;
+}
+
+.btn-icon:hover {
+    color: #374151;
+}
+
+.btn-icon:last-child:hover {
+    color: #ef4444;
+}
+
+.task-card .bi-circle,
+.task-card .bi-circle-half,
+.task-card .bi-circle-fill {
+    font-size: 1.25rem;
+}
+
+.text-danger {
+    color: #ef4444 !important;
+}
+
+.text-warning {
+    color: #f59e0b !important;
+}
+
+.text-success {
+    color: #10b981 !important;
+}
+
+.text-muted {
+    color: #9ca3af !important;
+    font-size: 0.875rem;
+}
+
+.task-cell.actions {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 10px; 
+}
+
+.task-cell.actions .btn {
+    padding: 0.5rem; 
+    font-size: 1rem; 
+}
+
+.task-cell.actions .btn i.bi-pencil-fill {
+    color: #3b82f6; 
+}
+
+.task-cell.actions .btn i.bi-trash-fill {
+    color: #f90000; 
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>To Do List</title>
+    <style>
+
+      body, html {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          overflow: hidden;
+      }
+
+      /* Background video */
+      .background-video {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: -1;
+      }
+
+      /* Main content area */
+      #root {
+          position: relative;
+          z-index: 1;
+          height: 100vh;
+          overflow-y: auto;
+          padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <video autoplay loop muted playsinline class="background-video">
+      <source src="%PUBLIC_URL%/video1.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Main content area -->
+    <div id="root">
+    </div>
+  </body>
+</html>
